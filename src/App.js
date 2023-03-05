@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Hero from './components/Hero';
+import Podcast from './components/Podcast';
+import Episodes from './components/EpisodeCards/Episodes';
+import Articles from './components/ArticlesSection/Articles';
+import Sponsors from './components/Sponsors';
+import FooterNav from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
+import { Route, RouterProvider, Routes } from 'react-router-dom';
+import Main from './layout/Main';
+import About from './components/About';
+import { router } from './Router/Router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <RouterProvider router={router}></RouterProvider>
+      {/* <section className='mx-20'>
+        <Hero></Hero>
+        <Podcast></Podcast>
+        <Episodes></Episodes>
+        <Articles></Articles>
+      </section> */}
     </div>
   );
 }
