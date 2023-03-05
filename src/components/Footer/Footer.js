@@ -13,7 +13,7 @@ const Footer = () => {
             <Sponsors></Sponsors>
             <div className='bg-black h-[574px]'>
                 <div className='mx-20 grid grid-cols-4 gap-60'>
-                    <img src={logo} alt="" className='w-52 mt-44' />
+                    <img src={logo} alt="logo" className='w-52 mt-44' />
                     {/* pages */}
                     <div className='text-white mt-44'>
                         <h2 className='text-xl font-bold mb-8'>Pages</h2>

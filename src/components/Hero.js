@@ -12,7 +12,7 @@ const Hero = () => {
                     <button className='h-12 text-lg font-semibold text-white bg-blue w-[154px] hover:bg-dark-blue'>Subscribe</button>
                 </div>
             </section>
-            <img src={image} alt="" />
+            <img src={image} alt="sound wave" />
         </div>
     );
 };
