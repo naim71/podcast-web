@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/Logo-white.svg'
 import img1 from '../../images/White Logo/Apple Podcast.png'
 import img2 from '../../images/White Logo/Google Podcast.png'
@@ -17,18 +18,18 @@ const Footer = () => {
                     <div className='text-white mt-44'>
                         <h2 className='text-xl font-bold mb-8'>Pages</h2>
                         <ul>
-                            <li className='mb-4'>Home</li>
-                            <li className='mb-4'>Podcast</li>
-                            <li className='mb-4'>Host</li>
-                            <li className='mb-4'>Blog</li>
+                            <Link to='/'><li className='mb-4'>Home</li></Link>
+                            <Link><li className='mb-4'>Podcast</li></Link>
+                            <Link><li className='mb-4'>Host</li></Link>
+                            <Link><li className='mb-4'>Blog</li></Link>
                         </ul>
                     </div>
                     {/* Reach Us */}
                     <div className='text-white mt-44'>
                         <h2 className='text-xl font-bold mb-8'>Reach Us</h2>
                         <ul>
-                            <li className='mb-4'>Contact</li>
-                            <li className='mb-4'>About</li>
+                            <Link><li className='mb-4'>Contact</li></Link>
+                            <Link to='/about'><li className='mb-4'>About</li></Link>
                         </ul>
                     </div>
 
@@ -36,10 +37,10 @@ const Footer = () => {
                     <div className='text-white mt-44'>
                         <h2 className='text-xl font-bold mb-8'>Subscribe</h2>
                         <ul>
-                            <li className='mb-8'><img src={img1} alt="" /></li>
-                            <li className='mb-8'><img src={img2} alt="" /></li>
-                            <li className='mb-8'><img src={img3} alt="" /></li>
-                            <li className='mb-24'><img src={img4} alt="" /></li>
+                            <Link><li className='mb-8'><img src={img1} alt="" /></li></Link>
+                            <Link><li className='mb-8'><img src={img2} alt="" /></li></Link>
+                            <Link><li className='mb-8'><img src={img3} alt="" /></li></Link>
+                            <Link><li className='mb-24'><img src={img4} alt="" /></li></Link>
                         </ul>
                     </div>
                 </div>
